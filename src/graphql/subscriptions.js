@@ -27,6 +27,7 @@ export const onCreateTruck = /* GraphQL */ `
       seatBelt
       airbag
       washerFluid
+      img
       createdAt
       updatedAt
     }
@@ -58,6 +59,7 @@ export const onUpdateTruck = /* GraphQL */ `
       seatBelt
       airbag
       washerFluid
+      img
       createdAt
       updatedAt
     }
@@ -89,6 +91,7 @@ export const onDeleteTruck = /* GraphQL */ `
       seatBelt
       airbag
       washerFluid
+      img
       createdAt
       updatedAt
     }
