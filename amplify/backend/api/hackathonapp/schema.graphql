@@ -22,5 +22,6 @@ type Truck @model {
   seatBelt: Boolean!
   airbag: Boolean!
   washerFluid: Boolean!
+  img: String!
 }
 
