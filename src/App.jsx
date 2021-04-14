@@ -2,6 +2,9 @@ import './App.css';
 import awsconfig from './aws-exports';
 import React, { useState, useEffect } from 'react';
 import { listTrucks } from './graphql/queries';
+// import { updateTrucks } from './graphql/mutations';
+// import { createTrucks } from './graphql/mutations';
+// import { deleteTrucks } from './graphql/mutations';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 // import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 
@@ -32,9 +35,9 @@ function App() {
         <h2>Trucking App</h2>
       </header>
       <div className="truckList">
-          { truck.map(truck => {
+          { truck.map((truck, idx) => {
             return(
-                <div>
+                <div key={`truck${idx}`}>
                   <div className="truckID">
                     Truck ID: {truck.id}
                   </div>

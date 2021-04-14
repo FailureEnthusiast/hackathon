@@ -16,5 +16,19 @@
         }
       }
     }
+  },
+  "auth": {
+    "hackathonapp03aab645": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "s3249a1e25": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }
