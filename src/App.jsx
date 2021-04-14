@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
 import React, { useState, useEffect } from 'react';
 import { listTrucks } from './graphql/queries';
@@ -13,12 +12,16 @@ function App() {
 
     const [truck, setTrucks] = useState([]);
 
+    useEffect(()=> {
+      fetchTrucks()
+    }, []);
+
     const fetchTrucks = async () => {
         try {
             const truckData = await API.graphql(graphqlOperation(listTrucks));
             const truckList = truckData.data.listTrucks.items;
             console.log('truck list', truckList);
-            setTruck(truckList);
+            setTrucks(truckList);
         } catch (error) {
             console.log('error on fetching trucks', error);
         }
