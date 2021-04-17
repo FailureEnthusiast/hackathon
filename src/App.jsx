@@ -1,3 +1,4 @@
+//AIzaSyC01kkcugqzmXI768eUpE0GQoLn8srms4s
 import './App.css';
 import awsconfig from './aws-exports';
 import React, { useState, useEffect } from 'react';
@@ -6,7 +7,7 @@ import { listTrucks } from './graphql/queries';
 // import { createTrucks } from './graphql/mutations';
 // import { deleteTrucks } from './graphql/mutations';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
-// import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
+import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 
 Amplify.configure(awsconfig);
 
@@ -33,6 +34,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h2>Trucking App</h2>
+        <div><AmplifySignOut /></div>
       </header>
       <div className="truckList">
           { truck.map((truck, idx) => {
@@ -53,6 +55,11 @@ function App() {
                   <div className="dashboardImg">
                     <img src={truck.img} height='60%' width='60%'></img>
                   </div>
+                 <div className="div">
+                   <button>
+                     
+                   </button>
+                 </div>
                 </div>
               )
           })}
@@ -61,4 +68,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
