@@ -47,12 +47,12 @@ function App() {
                   <div className="driverVitals">
                       Heart Rate: {truck.heartRate} | Oxygen: {truck.oxygen} | Blood Pressure: {truck.systolic}/{truck.diastolic} | Temperature: {truck.temperature}
                   </div>
-                  <div className="truckHealth">
+                  {/* <div className="truckHealth">
                     Location: {truck.location} | Fuel Level: {truck.lowFluel} | Lamp: {truck.lampOut} | Fog Lamp: {truck.fogLamp} | Oil: {truck.oil} | Tire Pressure: {truck.tire} | Engine Temperature: {truck.engTemp} | Traction: {truck.traction} | Antilock Break: {truck.antilockBreak} | Traction Control: {truck.tractionControlMalfunction} | Engine: {truck.engineWarning} | Battery: {truck.battery} | Seat belt: {truck.seatBelt} | Air Bag: {truck.airbag} | Washer Fluid: {truck.washerFluid}
                   </div>
                   <div className="dashboardImg">
                     <img src={truck.img} height='60%' width='60%'></img>
-                  </div>
+                  </div> */}
                 </div>
               )
           })}
