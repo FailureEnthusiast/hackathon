@@ -7,7 +7,11 @@
     "@aws-amplify/interactions": "^3.3.29",
     "@aws-amplify/storage": "^3.3.29",
     "@aws-amplify/ui": "^2.0.2",
+<<<<<<< HEAD
     "@aws-amplify/ui-react": "^1.0.7",
+=======
+    "@aws-amplify/ui-react": "^1.0.6",
+>>>>>>> fc842f1603b0456485576e7ea865de2e579f68c4
     "@aws-amplify/xr": "^2.2.29",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
