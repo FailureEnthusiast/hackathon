@@ -61,7 +61,7 @@ Our team is passionate and dedicated about improving the lives of truck drivers 
 ## Technology Used
 
 #### Hardware
-Raspberry Pi Zero, PiCam v1.0, Verizon HotSpot
+Raspberry Pi Zero, PiCam v1.0, Verizon HotSpot, Ipad Mini on Kiosk Mode
 
 #### Software Stack
 React, GraphQL, NodeJS, MaterialUI
