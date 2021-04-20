@@ -58,3 +58,21 @@ Our team is passionate and dedicated about improving the lives of truck drivers 
 #### Mia Sampson
 (bio here)
 
+## Technology Used
+
+#### Hardware
+Raspberry Pi Zero, PiCam v1.0, Verizon HotSpot
+
+#### Software Stack
+React, GraphQL, NodeJS, MaterialUI
+
+#### Cloud Resources
+AWS Amplify, S3, EC2, CloudFormation, DynamoDB, IAM
+
+#### Computer Vision 
+OpenCV, SSD
+
+#### Design Tools
+Figma
+
+
