@@ -1,70 +1,50 @@
 # TrackMyTruck
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Toll_information_medium_truck_icon.svg">
+We keep you moving.
 
-## Available Scripts
+## About 
 
-In the project directory, you can run:
+TrackMyTruck is an IoT system that helps companies improve the health of truck drivers and reduce truck breakdown.
 
-### `npm start`
+## The Problem We are Solving
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Large corporations rely of their trucking fleet and spend over $10 billion annually on truck maintenence and driver health annually. Much of this cost is due to truck breakdown and disparities in driver health.  Because there is no real-time data to monitor indicators of truck maintenence and driver health, companies spend billions of dollars on avoidable costs related to poor driver health, truck breakdowns, and road accidents.  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Our Innovative Technology
 
-### `npm test`
+Our team has created a real-time IoT monitoring system using multiple sensors to track real-time truck maintenence data and driver rest break metrics. We have built a functional prototype of a multi-sensor device that sends metrics to a web dashboard in real-time. With our technology solution, companies with large trucking fleets will be able to save on the costs of reducing truck breakdowns and driver health hazards.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### The Trucking Market and Our Business Model
 
-### `npm run build`
+The U.S. trucking market is over $1.1 trillion and is growing 7.1% CAGR.
+Within this market, fleet management technology spend is approximately $27 billion annually and is growing 10% CAGR.
+Therefore, the market for our technology solution is large and growting.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We have created a business model that leverages subscription recurring revenue.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Our revenue streams include:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1) Monthly IoT Device Leasing Fee to Trucking Companies
+2) Monthly Per User Subscription Fee Trucking Companies
+3) Monthly Recurring Ad Revenue to Partners Such as Gas Stations, Restaurants, and Hotels
 
-### `npm run eject`
+## Our Team
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Our team is passionate and dedicated about improving the lives of truck drivers and reducing truck breakdown and accidents on the road. We are software engineers and designers that have driverse background in technology, education, and healthcare.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Megan Casebier
+(bio here)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Amy Forman
+(bio here)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Leanne Frisinger
+(bio here)
 
-## Learn More
+### Bianca Gonzalez
+(bio here)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Mia Sampson
+(bio here)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
