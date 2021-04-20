@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# TrackMyTruck
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Toll_information_medium_truck_icon.svg">
 
 ## Available Scripts
 
