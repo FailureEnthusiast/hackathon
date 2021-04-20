@@ -11,11 +11,11 @@ TrackMyTruck is an IoT system that helps companies improve the health of truck d
 
 Large corporations rely of their trucking fleet and spend over $10 billion annually on truck maintenence and driver health annually. Much of this cost is due to truck breakdown and disparities in driver health.  Because there is no real-time data to monitor indicators of truck maintenence and driver health, companies spend billions of dollars on avoidable costs related to poor driver health, truck breakdowns, and road accidents.  
 
-### Our Innovative Technology
+## Our Innovative Technology
 
 Our team has created a real-time IoT monitoring system using multiple sensors to track real-time truck maintenence data and driver rest break metrics. We have built a functional prototype of a multi-sensor device that sends metrics to a web dashboard in real-time. With our technology solution, companies with large trucking fleets will be able to save on the costs of reducing truck breakdowns and driver health hazards.
 
-### The Trucking Market and Our Business Model
+## The Trucking Market and Our Business Model
 
 The U.S. trucking market is over $1.1 trillion and is growing 7.1% CAGR.
 Within this market, fleet management technology spend is approximately $27 billion annually and is growing 10% CAGR.
@@ -33,18 +33,18 @@ Our revenue streams include:
 
 Our team is passionate and dedicated about improving the lives of truck drivers and reducing truck breakdown and accidents on the road. We are software engineers and designers that have driverse background in technology, education, and healthcare.
 
-### Megan Casebier
+#### Megan Casebier
 (bio here)
 
-### Amy Forman
+#### Amy Forman
 (bio here)
 
-### Leanne Frisinger
+#### Leanne Frisinger
 (bio here)
 
-### Bianca Gonzalez
+#### Bianca Gonzalez
 (bio here)
 
-### Mia Sampson
+#### Mia Sampson
 (bio here)
 
