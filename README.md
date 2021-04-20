@@ -11,6 +11,16 @@ TrackMyTruck is an IoT system that helps companies improve the health of truck d
 
 Large corporations rely of their trucking fleet and spend over $10 billion annually on truck maintenence and driver health annually. Much of this cost is due to truck breakdown and disparities in driver health.  Because there is no real-time data to monitor indicators of truck maintenence and driver health, companies spend billions of dollars on avoidable costs related to poor driver health, truck breakdowns, and road accidents.  
 
+## Users
+
+#### Truckers
+
+Our team interviewed 10 truck drivers their day-to-day duties and pain points driving. We found that truck driver health is a problem that centers on the lack of rest, sleep, exercise, and nutritious dietary options. Another pain point that we identified was the inconvenience of planning rest breaks in unfamiliar routes. 
+
+#### Fleet Managers
+
+Our team interviewed 3 fleet managers regarding improvements to fleet management. Respondents stated that repairs and maitenence were a huge cost to companies and impact timeliness of deliveries. 
+
 ## Our Innovative Technology
 
 Our team has created a real-time IoT monitoring system using multiple sensors to track real-time truck maintenence data and driver rest break metrics. We have built a functional prototype of a multi-sensor device that sends metrics to a web dashboard in real-time. With our technology solution, companies with large trucking fleets will be able to save on the costs of reducing truck breakdowns and driver health hazards.
