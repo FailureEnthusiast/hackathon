@@ -3,6 +3,8 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Toll_information_medium_truck_icon.svg">
 We keep you moving.
 
+<p> Video Demo Here </p>
+
 ## About 
 
 TrackMyTruck is an IoT system that helps companies improve the health of truck drivers and reduce truck breakdown.
