@@ -4,11 +4,14 @@ import './App.css';
 import awsconfig from './aws-exports';
 import React, { useState, useEffect } from 'react';
 import { listTrucks } from './graphql/queries';
+import './Camera.jsx';
 // import { updateTrucks } from './graphql/mutations';
 // import { createTrucks } from './graphql/mutations';
 // import { deleteTrucks } from './graphql/mutations';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 
 
 Amplify.configure(awsconfig);
@@ -68,8 +71,7 @@ function App() {
             </MDBBtn>
           </MDBCol>
         <MDBCol className="col-md-3 my-2">
-            <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
-              Maitenenace log
+            <MDBBtn style={{ backgroundColor: '#808080'}} href="Camera">
             </MDBBtn>
           </MDBCol>
           <MDBCol className="col-md-3 my-2">
