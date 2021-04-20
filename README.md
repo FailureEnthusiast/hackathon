@@ -3,7 +3,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Toll_information_medium_truck_icon.svg">
 We keep you moving.
 
-<p><a href="https://www.youtube.com/watch?v=pwK_Xk2ACaU"><img src="https://share.getcloudapp.com/GGuQ4nAp"></a></p>
+<p><a href="https://www.youtube.com/watch?v=pwK_Xk2ACaU"><img src="https://share.getcloudapp.com/GGuQ4nAp" height=100 width=120></a></p>
 
 ## About 
 
