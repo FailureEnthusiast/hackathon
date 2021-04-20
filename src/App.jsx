@@ -67,11 +67,12 @@ function App() {
           </MDBCol>
           <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
-              work log
+              Work log
             </MDBBtn>
           </MDBCol>
         <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="Camera">
+            Maintence Log
             </MDBBtn>
           </MDBCol>
           <MDBCol className="col-md-3 my-2">
