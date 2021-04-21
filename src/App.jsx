@@ -4,12 +4,16 @@ import './App.css';
 import awsconfig from './aws-exports';
 import React, { useState, useEffect } from 'react';
 import { listTrucks } from './graphql/queries';
+import './Camera.jsx';
 // import { updateTrucks } from './graphql/mutations';
 // import { createTrucks } from './graphql/mutations';
 // import { deleteTrucks } from './graphql/mutations';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
+
 import ProgressBar from "./components/progressBar"
+
+
 
 
 Amplify.configure(awsconfig);
@@ -56,6 +60,7 @@ function App() {
           })}
         </MDBCol>
         </MDBRow>
+
         <div className="d-flex justify-content-center border border-light p-5">
        <ProgressBar/>
        </div>
@@ -63,16 +68,18 @@ function App() {
           <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
               My stops
+
             </MDBBtn>
           </MDBCol>
           <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
-              work log
+
+              Work log
             </MDBBtn>
           </MDBCol>
         <MDBCol className="col-md-3 my-2">
-            <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
-              Maitenenace log
+            <MDBBtn style={{ backgroundColor: '#808080'}} href="Camera">
+
             </MDBBtn>
           </MDBCol>
           <MDBCol className="col-md-3 my-2">
