@@ -10,7 +10,9 @@ import './Camera.jsx';
 // import { deleteTrucks } from './graphql/mutations';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import ProgressBar from "./components/progressBar"
+
 
 
 
@@ -58,21 +60,26 @@ function App() {
           })}
         </MDBCol>
         </MDBRow>
-       
+
+        <div className="d-flex justify-content-center border border-light p-5">
+       <ProgressBar/>
+       </div>
         <MDBRow>
           <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
-              Maps
+              My stops
+
             </MDBBtn>
           </MDBCol>
           <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
+
               Work log
             </MDBBtn>
           </MDBCol>
         <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="Camera">
-            Maintence Log
+
             </MDBBtn>
           </MDBCol>
           <MDBCol className="col-md-3 my-2">
