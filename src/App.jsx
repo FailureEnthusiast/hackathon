@@ -4,6 +4,7 @@ import './App.css';
 import awsconfig from './aws-exports';
 import React, { useState, useEffect } from 'react';
 import { listTrucks } from './graphql/queries';
+import ReactDOM from 'react-dom';
 // import { updateTrucks } from './graphql/mutations';
 // import { createTrucks } from './graphql/mutations';
 // import { deleteTrucks } from './graphql/mutations';
@@ -12,8 +13,10 @@ import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 
 import ProgressBar from "./components/progressBar";
 import Camera from "./components/Camera";
+import ClockApp from "./components/Clock";
 
-
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -42,9 +45,11 @@ function App() {
     <>
       <MDBContainer>
         <MDBRow>
+
         <MDBCol className="col-md-8">
         <h2>TrackYourTruck</h2>
         </MDBCol>
+
         <MDBCol className="col-md-4">
         { truck.map((truck, idx) => {
             return(
@@ -63,32 +68,44 @@ function App() {
         </MDBRow>
 
         <div className="d-flex justify-content-center border border-light p-5">
+
        <ProgressBar/>
        <Camera/>
+       <ClockApp/>
+
        </div>
+
+       <Router>
+         
         <MDBRow>
           <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
               My stops
-
             </MDBBtn>
           </MDBCol>
+
           <MDBCol className="col-md-3 my-2">
-            <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
-
-              Work log
+            <MDBBtn style={{ backgroundColor: '#808080'}}>
+              <Link to ="/Map">
+              Map
+              </Link>
             </MDBBtn>
           </MDBCol>
-        <MDBCol className="col-md-3 my-2">
-            <MDBBtn style={{ backgroundColor: '#808080'}} href="Camera">
 
+        <MDBCol className="col-md-3 my-2">
+            <MDBBtn style={{ backgroundColor: '#808080'}}>
+            <Link to ="/Clock">
+              Maintenance
+              </Link>
             </MDBBtn>
+
           </MDBCol>
           <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
               Load Log
             </MDBBtn>
           </MDBCol>
+
           </MDBRow>
           <MDBRow>
           <MDBCol className="col-md-3 my-2">
@@ -96,28 +113,33 @@ function App() {
               Messages
             </MDBBtn>
           </MDBCol>
+
           <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
               menu item
             </MDBBtn>
           </MDBCol>
+
         <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
               menu item
             </MDBBtn>
           </MDBCol>
+
           <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
               menu item
             </MDBBtn>
           </MDBCol>
+
           </MDBRow>
           <MDBBtn style={{ backgroundColor: '#808080'}}><AmplifySignOut /></MDBBtn>
+
+          </Router>
+
     </MDBContainer>
     
     </>
-
-
   );
 }
 
