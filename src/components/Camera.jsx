@@ -1,3 +1,6 @@
+//CSS
+import './camera.css';
+
 //React
 import React, { useState, useEffect } from 'react';
 

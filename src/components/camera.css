@@ -1,0 +1,19 @@
+.truckCard {
+    position: center;
+    margin-left: 50px;
+}
+
+table {
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+    margin: 10px;
+}
+
+td {
+    padding: 10px
+}
+
+th {
+    padding: 10px
+}
+
