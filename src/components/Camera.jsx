@@ -1,4 +1,3 @@
-
 import awsconfig from '../aws-exports';
 import React, { useState, useEffect } from 'react';
 import { listTrucks } from '../graphql/queries';
@@ -6,7 +5,7 @@ import { MDBContainer, MDBRow, MDBCol,MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 // import { updateTrucks } from './graphql/mutations';
 // import { createTrucks } from './graphql/mutations';
 // import { deleteTrucks } from './graphql/mutations';
-import Amplify, { API, graphqlOperation } from 'aws-amplify';
+import Amplify, { API, graphqlOperation, Storage } from 'aws-amplify';
 // import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 
 
@@ -22,29 +21,28 @@ function Camera() {
       fetchTrucks()
     }, []);
 
-    const toggleTruck = async idx => {
-      if (truckPlaying === idx) {
-          setTruckPlaying('');
-          return;
-      }
+  //   const toggleTruck = async idx => {
+  //     if (truckPlaying === idx) {
+  //         setTruckPlaying('');
+  //         return;
+  //     }
+    
+  //   const truckFilePath = truck[idx].filePath;
+  //   try {
+  //     const fileAccessURL = await Storage.get(truckFilePath, { expires: 60 });
+  //     console.log('access url', fileAccessURL);          
+  //     setTruckPlaying(idx);
+  //     setTruckURL(fileAccessURL);
+  //         return;
+  //    } catch (error) {
+  //       console.error('error accessing the file from s3', error);
+  //       setTruckURL('');         
+  //      setTruckPlaying('');
+  //     };
 
-      const truckFilePath = truck[idx].filePath;
-      try {
-          const fileAccessURL = await Storage.get(truckFilePath, { expires: 60 });
-          console.log('access url', fileAccessURL);
-          setTruckPlaying(idx);
-          setTruckURL(fileAccessURL);
-          return;
-      } catch (error) {
-          console.error('error accessing the file from s3', error);
-          setTruckURL('');
-          setTruckPlaying('');
-      }
-
-
-      setTruckPlaying(idx);
-      return
-  }
+  //     setTruckPlaying(idx);
+  //     return
+  // }
 
     const fetchTrucks = async () => {
         try {
@@ -67,6 +65,7 @@ function Camera() {
             return(
                 <div key={`truck${idx}`}>
                   <div className="dashboardImg">
+
                     <img src={truck.img} height='60%' width='60%'></img>
                   </div>
                   <div className="truckHealth">
@@ -93,6 +92,6 @@ function Camera() {
       </div>
     </div>
   );
-}
+};
 
 export default Camera;
