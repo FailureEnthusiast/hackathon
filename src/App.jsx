@@ -4,14 +4,15 @@ import './App.css';
 import awsconfig from './aws-exports';
 import React, { useState, useEffect } from 'react';
 import { listTrucks } from './graphql/queries';
-import './Camera.jsx';
 // import { updateTrucks } from './graphql/mutations';
 // import { createTrucks } from './graphql/mutations';
 // import { deleteTrucks } from './graphql/mutations';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 
-import ProgressBar from "./components/progressBar"
+import ProgressBar from "./components/progressBar";
+import Camera from "./components/Camera";
+
 
 
 

@@ -1,7 +1,7 @@
-import './App.css';
-import awsconfig from './aws-exports';
+
+import awsconfig from '../aws-exports';
 import React, { useState, useEffect } from 'react';
-import { listTrucks } from './graphql/queries';
+import { listTrucks } from '../graphql/queries';
 import { MDBContainer, MDBRow, MDBCol,MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 // import { updateTrucks } from './graphql/mutations';
 // import { createTrucks } from './graphql/mutations';
@@ -13,12 +13,38 @@ import Amplify, { API, graphqlOperation } from 'aws-amplify';
 Amplify.configure(awsconfig);
 
 function Camera() {
-
     const [truck, setTrucks] = useState([]);
+    const [truckPlaying, setTruckPlaying] = useState('');
+    const [truckURL, setTruckURL] = useState('');
+
 
     useEffect(()=> {
       fetchTrucks()
     }, []);
+
+    const toggleTruck = async idx => {
+      if (truckPlaying === idx) {
+          setTruckPlaying('');
+          return;
+      }
+
+      const truckFilePath = truck[idx].filePath;
+      try {
+          const fileAccessURL = await Storage.get(truckFilePath, { expires: 60 });
+          console.log('access url', fileAccessURL);
+          setTruckPlaying(idx);
+          setTruckURL(fileAccessURL);
+          return;
+      } catch (error) {
+          console.error('error accessing the file from s3', error);
+          setTruckURL('');
+          setTruckPlaying('');
+      }
+
+
+      setTruckPlaying(idx);
+      return
+  }
 
     const fetchTrucks = async () => {
         try {
@@ -44,7 +70,7 @@ function Camera() {
                     <img src={truck.img} height='60%' width='60%'></img>
                   </div>
                   <div className="truckHealth">
-                    Fuel Level: {truck.lowFluel} 
+                    Fuel Level: {truck.lowFuel} 
                     | Lamp: {truck.lampOut} 
                     | Fog Lamp: {truck.fogLamp} 
                     | Oil: {truck.oil} 
