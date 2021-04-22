@@ -2,6 +2,8 @@ import './App.css';
 import React from 'react';
 import { App } from './App';
 import { Camera } from './components/Camera';
+import { Clock } from './components/Clock';
+
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 export const Routes = () => {
@@ -17,7 +19,10 @@ export const Routes = () => {
         </Route>
         <Route exact path="/" component={App} />
         <Route exact path="/Camera" component={Camera} />
+        <Route exact path="/Clock" component={Clock} />
       </Switch>
     </div>
   );
 };
+
+export default Routes;

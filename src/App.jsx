@@ -64,6 +64,7 @@ function App() {
 
         <div className="d-flex justify-content-center border border-light p-5">
        <ProgressBar/>
+       <Camera/>
        </div>
         <MDBRow>
           <MDBCol className="col-md-3 my-2">
