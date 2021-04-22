@@ -1,7 +1,7 @@
-import './App.css';
-import awsconfig from './aws-exports';
+
+import awsconfig from '../aws-exports';
 import React, { useState, useEffect } from 'react';
-import { listTrucks } from './graphql/queries';
+import { listTrucks } from '../graphql/queries';
 import { MDBContainer, MDBRow, MDBCol,MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 // import { updateTrucks } from './graphql/mutations';
 // import { createTrucks } from './graphql/mutations';
@@ -32,10 +32,10 @@ function Camera() {
     };
 
   return (
-    <div className="App">
-      <header className="App-header">
 
-      </header>
+      <MDBContainer>
+        <MDBRow> 
+        <div className="d-flex justify-content-center my-3">
       <div className="truckList">
           { truck.map((truck, idx) => {
             return(
@@ -43,6 +43,7 @@ function Camera() {
                   <div className="dashboardImg">
                     <img src={truck.img} height='60%' width='60%'></img>
                   </div>
+                  
                   <div className="truckHealth">
                     Fuel Level: {truck.lowFluel} 
                     | Lamp: {truck.lampOut} 
@@ -62,10 +63,13 @@ function Camera() {
                  <div className="div">
                  </div>
                 </div>
+               
               )
           })}
       </div>
-    </div>
+      </div>
+      </MDBRow>
+      </MDBContainer>
   );
 }
 
