@@ -6,7 +6,7 @@ import { MDBContainer, MDBRow, MDBCol,MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 // import { updateTrucks } from './graphql/mutations';
 // import { createTrucks } from './graphql/mutations';
 // import { deleteTrucks } from './graphql/mutations';
-import Amplify, { API, graphqlOperation } from 'aws-amplify';
+import Amplify, { API, graphqlOperation, Storage } from 'aws-amplify';
 // import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 
 
@@ -28,17 +28,18 @@ function Camera() {
           return;
       }
 
-      const truckFilePath = truck[idx].filePath;
-      try {
-          const fileAccessURL = await Storage.get(truckFilePath, { expires: 60 });
-          console.log('access url', fileAccessURL);
-          setTruckPlaying(idx);
-          setTruckURL(fileAccessURL);
+
+    const truckFilePath = truck[idx].filePath;
+    try {
+      const fileAccessURL = await Storage.get(truckFilePath, { expires: 60 });
+      console.log('access url', fileAccessURL);          
+      setTruckPlaying(idx);
+      setTruckURL(fileAccessURL);
           return;
-      } catch (error) {
-          console.error('error accessing the file from s3', error);
-          setTruckURL('');
-          setTruckPlaying('');
+     } catch (error) {
+        console.error('error accessing the file from s3', error);
+        setTruckURL('');         
+       setTruckPlaying('');
       }
 
 
