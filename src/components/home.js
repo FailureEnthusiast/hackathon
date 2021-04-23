@@ -38,11 +38,11 @@ function Home() {
   return (
     
     <>
- 
       <MDBContainer>
         <MDBRow>
         <MDBCol className="col-md-8">
         <h2>TrackYourTruck</h2>
+        <MDBBtn style={{ backgroundColor: '#808080'}}><AmplifySignOut /></MDBBtn>
         </MDBCol>
         <MDBCol className="col-md-4">
         { truck.map((truck, idx) => {
@@ -65,10 +65,11 @@ function Home() {
        </div>
         <MDBRow>
           <MDBCol className="col-md-3 my-2">
-           
+           <Link to="/map">
             <MDBBtn style={{ backgroundColor: '#808080'}}>
               My stops
             </MDBBtn>
+            </Link>
           </MDBCol>
           <MDBCol className="col-md-3 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
@@ -112,7 +113,7 @@ function Home() {
             </MDBBtn>
           </MDBCol>
           </MDBRow>
-          <MDBBtn style={{ backgroundColor: '#808080'}}><AmplifySignOut /></MDBBtn>
+         
     </MDBContainer>
  
     </>

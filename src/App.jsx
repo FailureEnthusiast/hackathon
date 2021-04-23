@@ -12,6 +12,7 @@ import { listTrucks } from './graphql/queries';
 import ProgressBar from "./components/progressBar";
 import Camera from "./components/Camera";
 import Home from "./components/home";
+import Map from "./components/map";
 import { BrowserRouter as Router } from "react-router-dom";
 import {Route, Switch} from "react-router-dom"
 
@@ -19,16 +20,15 @@ function App() {
   return (
     <Router> 
     <div className="App">
-      <Home/>
       <Switch>
+        <Route path="/" exact component={Home}/>
         <Route path="/Camera" component={Camera}/>
         <Route path="/progressBar" component={ProgressBar}/>
+        <Route path="/map" component={Map}/>
       </Switch>
     </div>
     </Router>
   );
 }
-
-
 
 export default App;

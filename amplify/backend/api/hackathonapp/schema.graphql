@@ -23,5 +23,6 @@ type Truck @model {
   airbag: Boolean!
   washerFluid: Boolean!
   img: String!
+  filePath: String!
 }
 
