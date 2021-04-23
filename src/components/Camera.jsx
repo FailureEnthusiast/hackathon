@@ -1,3 +1,8 @@
+
+//MaterialDesignBootstrap
+import { MDBContainer, MDBRow, MDBCol,MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
+
+
 //CSS
 import './camera.css';
 
@@ -12,9 +17,11 @@ import { AmplifyS3Image, withAuthenticator } from '@aws-amplify/ui-react';
 
 // import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 
+
 Amplify.configure(awsconfig);
 
 function Camera() {
+
     const [truck, setTrucks] = useState([]);
     const [truckOn, setTruckOn] = useState('');
     const [truckURL, setTruckURL] = useState('');
@@ -22,6 +29,7 @@ function Camera() {
     useEffect(()=> {
       fetchTrucks()
     }, []);
+
 
     const toggleTruck = async idx => {
       if (truckOn === idx) {
@@ -56,6 +64,7 @@ function Camera() {
     };
 
   return (
+
               <div className='truckCard'>
                   <p><AmplifyS3Image path={truck.filePath} /></p>
                   <table>
