@@ -3,9 +3,6 @@ import { MDBContainer, MDBRow, MDBCol,MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 import awsconfig from '../aws-exports';
 import React, { useState, useEffect } from 'react';
 import { listTrucks } from '../graphql/queries';
-// import { updateTrucks } from './graphql/mutations';
-// import { createTrucks } from './graphql/mutations';
-// import { deleteTrucks } from './graphql/mutations';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 import ProgressBar from "../components/progressBar";
@@ -44,7 +41,7 @@ function Home() {
         <h2>TrackYourTruck</h2>
         <MDBBtn style={{ backgroundColor: '#808080'}}><AmplifySignOut /></MDBBtn>
         </MDBCol>
-        <MDBCol className="col-md-4">
+        <MDBCol className="col-md-4 my-2">
         { truck.map((truck, idx) => {
             return(
                 <div key={`truck${idx}`}>
@@ -60,7 +57,7 @@ function Home() {
           })}
         </MDBCol>
         </MDBRow>
-        <div className="d-flex justify-content-center border border-light p-5">
+        <div className="d-flex justify-content-center border border-light p-4 my-2">
        <ProgressBar/>
        </div>
         <MDBRow>
