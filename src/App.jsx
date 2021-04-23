@@ -12,10 +12,8 @@ import { listTrucks } from './graphql/queries';
 import ProgressBar from "./components/progressBar";
 import Camera from "./components/Camera";
 import Home from "./components/home";
-
 import { BrowserRouter as Router } from "react-router-dom";
-import {Link, Route, Switch} from "react-router-dom"
-
+import {Route, Switch} from "react-router-dom"
 
 function App() {
   return (
