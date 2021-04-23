@@ -1,11 +1,9 @@
-
-//MaterialDesignBootstrap
-import { MDBContainer, MDBRow, MDBCol,MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
+//CSS
 import './camera.css';
 
 //React
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+
 //AWS Amplify
 import awsconfig from '../aws-exports';
 import  { listTrucks } from './../graphql/queries';
@@ -14,11 +12,9 @@ import { AmplifyS3Image, withAuthenticator } from '@aws-amplify/ui-react';
 
 // import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 
-
 Amplify.configure(awsconfig);
 
 function Camera() {
-
     const [truck, setTrucks] = useState([]);
     const [truckOn, setTruckOn] = useState('');
     const [truckURL, setTruckURL] = useState('');
@@ -26,7 +22,6 @@ function Camera() {
     useEffect(()=> {
       fetchTrucks()
     }, []);
-
 
     const toggleTruck = async idx => {
       if (truckOn === idx) {
@@ -61,14 +56,7 @@ function Camera() {
     };
 
   return (
-
-              <div 
-              className='truckCard'>
-                 <Link to="/">
-    <MDBBtn style={{ backgroundColor: '#808080'}}
-    >Home Page
-    </MDBBtn>
-    </Link>
+              <div className='truckCard'>
                   <p><AmplifyS3Image path={truck.filePath} /></p>
                   <table>
                     <thead>
@@ -107,10 +95,6 @@ function Camera() {
                         <td>{truck.engTemp}</td>
                       </tr>
                       <tr>
-                        <td>Traction</td>
-                        <td>{truck.traction}</td>
-                      </tr>
-                      <tr>
                         <td>Antilock Break On</td>
                         <td>{truck.antilockBreak}</td>
                       </tr>
@@ -125,14 +109,6 @@ function Camera() {
                       <tr>
                         <td>Battery</td>
                         <td>{truck.battery}</td>
-                      </tr>
-                      <tr>
-                        <td>Seat Belt On </td>
-                        <td>{truck.seatBelt}</td>
-                      </tr>
-                      <tr>
-                        <td>Air Bag</td>
-                        <td>{truck.airbag}</td>
                       </tr>
                       <tr>
                         <td>Washer Fluid Low</td>
