@@ -61,19 +61,15 @@ function Home() {
        <ProgressBar/>
        </div>
         <MDBRow>
-          <MDBCol className="col-md-3 my-2">
+          <MDBCol className="col-md-4 my-2">
            <Link to="/map">
             <MDBBtn style={{ backgroundColor: '#808080'}}>
-              My stops
+              Navigation
             </MDBBtn>
             </Link>
           </MDBCol>
-          <MDBCol className="col-md-3 my-2">
-            <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
-              work log
-            </MDBBtn>
-          </MDBCol>
-        <MDBCol className="col-md-3 my-2">
+    
+        <MDBCol className="col-md-4 my-2">
             
         <Link to="/Camera">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
@@ -82,29 +78,8 @@ function Home() {
         </Link>
       
           </MDBCol>
-          <MDBCol className="col-md-3 my-2">
-            <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
-              Load Log
-            </MDBBtn>
-          </MDBCol>
-          </MDBRow>
-          <MDBRow>
-          <MDBCol className="col-md-3 my-2">
-            <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
-              Messages
-            </MDBBtn>
-          </MDBCol>
-          <MDBCol className="col-md-3 my-2">
-            <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
-              menu item
-            </MDBBtn>
-          </MDBCol>
-        <MDBCol className="col-md-3 my-2">
-            <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
-              menu item
-            </MDBBtn>
-          </MDBCol>
-          <MDBCol className="col-md-3 my-2">
+    
+          <MDBCol className="col-md-4 my-2">
             <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
               menu item
             </MDBBtn>
