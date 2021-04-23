@@ -7,11 +7,6 @@ export const getTruck = /* GraphQL */ `
       id
       firstName
       lastName
-      heartRate
-      oxygen
-      systolic
-      diastolic
-      temperature
       location
       lowFuel
       lampOut
@@ -28,6 +23,7 @@ export const getTruck = /* GraphQL */ `
       airbag
       washerFluid
       img
+      filePath
       createdAt
       updatedAt
     }
@@ -44,11 +40,6 @@ export const listTrucks = /* GraphQL */ `
         id
         firstName
         lastName
-        heartRate
-        oxygen
-        systolic
-        diastolic
-        temperature
         location
         lowFuel
         lampOut
@@ -65,6 +56,7 @@ export const listTrucks = /* GraphQL */ `
         airbag
         washerFluid
         img
+        filePath
         createdAt
         updatedAt
       }

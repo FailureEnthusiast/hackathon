@@ -2,27 +2,21 @@ type Truck @model {
   id: ID!
   firstName: String!
   lastName: String!
-  heartRate: Int!
-  oxygen: Int!
-  systolic: Int!
-  diastolic: Int!
-  temperature: Int!
   location: String!
-  lowFuel: Int!
-  lampOut: Boolean!
-  fogLamp: Boolean!
-  oil: Boolean!
-  tire: Boolean!
-  engTemp: Boolean!
-  traction: Boolean!
-  antilockBreak: Boolean!
-  tractionControlMalfunction: Boolean!
-  engineWarning: Boolean!
-  battery: Boolean!
-  seatBelt: Boolean!
-  airbag: Boolean!
-  washerFluid: Boolean!
+  lowFuel: String!
+  lampOut: String!
+  fogLamp: String!
+  oil: String!
+  tire: String!
+  engTemp: String!
+  traction: String!
+  antilockBreak: String!
+  tractionControlMalfunction: String!
+  engineWarning: String!
+  battery: String!
+  seatBelt: String!
+  airbag: String!
+  washerFluid: String!
   img: String!
   filePath: String!
 }
-
