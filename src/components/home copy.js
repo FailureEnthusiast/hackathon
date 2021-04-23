@@ -2,7 +2,7 @@
 import { MDBContainer, MDBRow, MDBCol,MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 import awsconfig from '../aws-exports';
 import React, { useState, useEffect } from 'react';
-import { listTrucks } from '../graphql/queries';
+import { listTrucks } from './graphql/queries';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 import ProgressBar from "../components/progressBar";
@@ -51,9 +51,6 @@ function Home() {
                   </div>
                   <div className="driverName">
                     Driver: {truck.lastName}, {truck.firstName}
-                  </div>
-                  <div className="driverName">
-                    Location: {truck.location}
                   </div>
                 </div>
               )
