@@ -1,6 +1,7 @@
+
 //MaterialDesignBootstrap
 import { MDBContainer, MDBRow, MDBCol,MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
-
+import './camera.css';
 
 //React
 import React, { useState, useEffect } from 'react';
