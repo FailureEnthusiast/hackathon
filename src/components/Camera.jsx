@@ -1,8 +1,12 @@
 //CSS
 import './camera.css';
+import { MDBContainer, MDBRow, MDBCol,MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
+
 
 //React
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
+
 
 //uuid library to provide unique id to jpeg
 import { v4 as uuid } from 'uuid';
