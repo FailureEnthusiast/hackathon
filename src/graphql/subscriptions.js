@@ -26,6 +26,7 @@ export const onCreateTruck = /* GraphQL */ `
       filePath
       createdAt
       updatedAt
+      speed
     }
   }
 `;
@@ -54,6 +55,7 @@ export const onUpdateTruck = /* GraphQL */ `
       filePath
       createdAt
       updatedAt
+      speed
     }
   }
 `;
@@ -82,6 +84,7 @@ export const onDeleteTruck = /* GraphQL */ `
       filePath
       createdAt
       updatedAt
+      speed
     }
   }
 `;

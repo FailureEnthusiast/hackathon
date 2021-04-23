@@ -26,6 +26,7 @@ export const getTruck = /* GraphQL */ `
       filePath
       createdAt
       updatedAt
+      speed
     }
   }
 `;
@@ -59,6 +60,7 @@ export const listTrucks = /* GraphQL */ `
         filePath
         createdAt
         updatedAt
+        speed
       }
       nextToken
     }
