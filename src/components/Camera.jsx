@@ -5,7 +5,7 @@ import './camera.css';
 
 //React
 import React, { useState, useEffect } from 'react';
-
+import { Link } from "react-router-dom";
 //AWS Amplify
 import awsconfig from '../aws-exports';
 import  { listTrucks } from './../graphql/queries';
@@ -62,7 +62,13 @@ function Camera() {
 
   return (
 
-              <div className='truckCard'>
+              <div 
+              className='truckCard'>
+                 <Link to="/">
+    <MDBBtn style={{ backgroundColor: '#808080'}}
+    >Home Page
+    </MDBBtn>
+    </Link>
                   <p><AmplifyS3Image path={truck.filePath} /></p>
                   <table>
                     <thead>

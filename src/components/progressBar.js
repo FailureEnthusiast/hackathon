@@ -1,5 +1,5 @@
 import React from "react";
-
+import {MDBCard, MDBCol, MDBContainer, MDBRow} from "mdb-react-ui-kit";
 import ReactStopwatch from 'react-stopwatch';
  
 const ProgressBar = () => (
@@ -9,22 +9,21 @@ const ProgressBar = () => (
     hours={0}
     limit="11:00:00"
     onChange={({ hours, minutes, seconds }) => {
-      // do something
+      // todo: at 5 hours push alter for break and change color
+      // todo: at 10H 30 mins of active driving give warning to stop in 30 mins
     }}
     onCallback={() => console.log('Finish')}
     render={({ hours, minutes, seconds }) => {
       return (
         <div>
+          <MDBContainer>
             <p>Drive Timer</p>
-          <p>
-            Hours: { hours }
-          </p>
-          <p>
-            Minutes: { minutes }
-          </p>
-          <p>
-            Seconds: { seconds }
-          </p>
+            <MDBRow>
+            <MDBCol className="col-md-4 my-2">H:{ hours } </MDBCol>
+            <MDBCol className="col-md-4 my-2">Min:{ minutes } </MDBCol>
+            <MDBCol className="col-md-4 my-2">Sec:{ seconds } </MDBCol>
+          </MDBRow>
+          </MDBContainer>
         </div>
       );
     }}
