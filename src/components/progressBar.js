@@ -1,20 +1,34 @@
 import React from "react";
-import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 
-const ProgressBar = () => {
-  return (
-    <CountdownCircleTimer
-    isPlaying
-    duration={10}
-    colors={[
-      ['#004777', 0.33],
-      ['#F7B801', 0.33],
-      ['#A30000', 0.33],
-    ]}
-  >
-    {({ remainingTime }) => remainingTime}
-  </CountdownCircleTimer>
-  )
-  }
-
-export default ProgressBar; 
+import ReactStopwatch from 'react-stopwatch';
+ 
+const ProgressBar = () => (
+  <ReactStopwatch
+    seconds={0}
+    minutes={0}
+    hours={0}
+    limit="11:00:00"
+    onChange={({ hours, minutes, seconds }) => {
+      // do something
+    }}
+    onCallback={() => console.log('Finish')}
+    render={({ hours, minutes, seconds }) => {
+      return (
+        <div>
+            <p>Drive Timer</p>
+          <p>
+            Hours: { hours }
+          </p>
+          <p>
+            Minutes: { minutes }
+          </p>
+          <p>
+            Seconds: { seconds }
+          </p>
+        </div>
+      );
+    }}
+   />
+);
+ 
+export default ProgressBar;
