@@ -4,15 +4,59 @@ import './camera.css';
 //React
 import React, { useState, useEffect } from 'react';
 
+//uuid library to provide unique id to jpeg
+import { v4 as uuid } from 'uuid';
+
 //AWS Amplify
 import awsconfig from '../aws-exports';
 import  { listTrucks } from './../graphql/queries';
 import Amplify, { API, graphqlOperation, Storage } from 'aws-amplify';
 import { AmplifyS3Image, withAuthenticator } from '@aws-amplify/ui-react';
+import { updateTruck, createTruck } from './../graphql/mutations';
+
+//material-ui
+import { IconButton, TextField } from '@material-ui/core';
+import AddIcon from '@material-ui/icons/Add';
+import PublishIcon from '@material-ui/icons/Publish';
 
 // import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 
 Amplify.configure(awsconfig);
+
+const AddTruck = ({onUpload}) => {
+
+  const [truckData, setTruckData] = useState({});
+  const [imgData, setImgData] = useState()
+  
+  const uploadTruck = async () => {
+
+      //Upload the truck data
+
+      console.log('truckData', truckData)
+      const { id } = truckData
+      const { key } = await Storage.put(`${uuid()}.jpg`, imgData, { contentType: 'image/jpg/png' });
+      const createTruckInput = {
+          id: uuid(),
+          filePath: key
+      }
+      await API.graphql(graphqlOperation(createTruck, {input: createTruckInput}))
+      onUpload();
+  }
+
+  return (
+      <div className='newTruck'>
+          <TextField 
+              label='id'
+              value={truckData.id}
+              onChange={e => setTruckData({...truckData, name: e.target.value})}
+          />
+          <input type='file' accept='image/jpg/png' onChange={e => setImgData(e.target.files[0])}></input>
+          <IconButton onClick={uploadTruck}>
+              <PublishIcon />
+          </IconButton>
+      </div>
+  )
+}
 
 function Camera() {
     const [truck, setTrucks] = useState([]);
@@ -117,7 +161,6 @@ function Camera() {
                     </tbody>
                   </table>
                  </div>
-    
   );
 }
 
