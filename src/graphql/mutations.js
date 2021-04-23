@@ -10,11 +10,6 @@ export const createTruck = /* GraphQL */ `
       id
       firstName
       lastName
-      heartRate
-      oxygen
-      systolic
-      diastolic
-      temperature
       location
       lowFuel
       lampOut
@@ -31,6 +26,7 @@ export const createTruck = /* GraphQL */ `
       airbag
       washerFluid
       img
+      filePath
       createdAt
       updatedAt
     }
@@ -45,11 +41,6 @@ export const updateTruck = /* GraphQL */ `
       id
       firstName
       lastName
-      heartRate
-      oxygen
-      systolic
-      diastolic
-      temperature
       location
       lowFuel
       lampOut
@@ -66,6 +57,7 @@ export const updateTruck = /* GraphQL */ `
       airbag
       washerFluid
       img
+      filePath
       createdAt
       updatedAt
     }
@@ -80,11 +72,6 @@ export const deleteTruck = /* GraphQL */ `
       id
       firstName
       lastName
-      heartRate
-      oxygen
-      systolic
-      diastolic
-      temperature
       location
       lowFuel
       lampOut
@@ -101,6 +88,7 @@ export const deleteTruck = /* GraphQL */ `
       airbag
       washerFluid
       img
+      filePath
       createdAt
       updatedAt
     }

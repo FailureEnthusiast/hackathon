@@ -27,40 +27,40 @@ import PublishIcon from '@material-ui/icons/Publish';
 
 Amplify.configure(awsconfig);
 
-const AddTruck = ({onUpload}) => {
+// const AddTruck = ({onUpload}) => {
 
-  const [truckData, setTruckData] = useState({});
-  const [imgData, setImgData] = useState()
+//   const [truckData, setTruckData] = useState({});
+//   const [imgData, setImgData] = useState()
   
-  const uploadTruck = async () => {
+//   const uploadTruck = async () => {
 
-      //Upload the truck data
+//       //Upload the truck data
 
-      console.log('truckData', truckData)
-      const { id } = truckData
-      const { key } = await Storage.put(`${uuid()}.jpg`, imgData, { contentType: 'image/jpg/png' });
-      const createTruckInput = {
-          id: uuid(),
-          filePath: key
-      }
-      await API.graphql(graphqlOperation(createTruck, {input: createTruckInput}))
-      onUpload();
-  }
+//       console.log('truckData', truckData)
+//       const { id } = truckData
+//       const { key } = await Storage.put(`${uuid()}.jpg`, imgData, { contentType: 'image/jpg/png' });
+//       const createTruckInput = {
+//           id: uuid(),
+//           filePath: key
+//       }
+//       await API.graphql(graphqlOperation(createTruck, {input: createTruckInput}))
+//       onUpload();
+//   }
 
-  return (
-      <div className='newTruck'>
-          <TextField 
-              label='id'
-              value={truckData.id}
-              onChange={e => setTruckData({...truckData, name: e.target.value})}
-          />
-          <input type='file' accept='image/jpg/png' onChange={e => setImgData(e.target.files[0])}></input>
-          <IconButton onClick={uploadTruck}>
-              <PublishIcon />
-          </IconButton>
-      </div>
-  )
-}
+//   return (
+//       <div className='newTruck'>
+//           <TextField 
+//               label='id'
+//               value={truckData.id}
+//               onChange={e => setTruckData({...truckData, id: e.target.value})}
+//           />
+//           <input type='file' accept='image/jpg/png' onChange={e => setImgData(e.target.files[0])}></input>
+//           <IconButton onClick={uploadTruck}>
+//               <PublishIcon />
+//           </IconButton>
+//       </div>
+//   )
+// }
 
 function Camera() {
     const [truck, setTrucks] = useState([]);
