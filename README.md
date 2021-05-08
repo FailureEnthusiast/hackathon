@@ -1,6 +1,6 @@
 # TrackMyTruck
 
-<img src="https://logo-truck.s3-us-west-2.amazonaws.com/Screen+Shot+2021-05-07+at+8.37.21+PM.png">
+<img src="https://logo-truck.s3-us-west-2.amazonaws.com/Screen+Shot+2021-05-07+at+8.37.21+PM.png" height=50% width=50%>
 <img src="https://truck-storage144558-dev.s3-us-west-2.amazonaws.com/dashboard.jpg">
 We keep you moving.
 
