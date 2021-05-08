@@ -40,6 +40,7 @@ Our revenue streams include:
 2. Monthly Per User Subscription Fee Trucking Companies
 3. Monthly Recurring Ad Revenue to Partners Such as Gas Stations, Restaurants, and Hotels
 ## Our Team
+![our team memoji's](https://i.imgur.com/BZFzgOL.jpg)
 Our team is passionate and dedicated about improving the lives of truck drivers and reducing truck breakdown and accidents on the road. We are software engineers and designers that have diverse backgrounds in technology, education, and healthcare.
 ### Megan Casebier
 Recent UXUI Graduate from General Assembly, Psychology and Human Behavior graduate from Baylor University, Visual Design enthusiast 
