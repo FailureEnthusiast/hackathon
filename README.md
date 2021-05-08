@@ -3,7 +3,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Toll_information_medium_truck_icon.svg">
 We keep you moving.
 
-[demo]("https://www.youtube.com/watch?v=C_1VTypYK5U")
+[demo](https://www.youtube.com/watch?v=C_1VTypYK5U)
 
 # Project Name - Track My Truck 
 ## Elevator Pitch
