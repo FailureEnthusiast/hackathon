@@ -56,7 +56,7 @@ Recent UX Graduate from General Assembly and Integrated Marketing and Communicat
 ### Leanne Frisinger
 Full Stack Developer and recent graduate from GA Software Engineering Immersive programme with a background in Education, Design and Visual Arts.
 ### Bianca Gonzalez
-Full Stack Developer and recent graduate of GA Software Engineering Immersive with a background in healthcare and IoT
+Robotics engineer, sepcialized in computational perception and robotics at Georgia Tech (MS CS) with a background in healthcare, supply chain, and logistics.
 ### Mia Sampson
 UX designer with a passion for people and creating fun and meaningful ways to interact with and understand the world
  
