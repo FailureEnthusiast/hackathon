@@ -9,6 +9,12 @@ import ProgressBar from "../components/progressBar";
 // import { BrowserRouter as Router } from "react-router-dom";
 import {Link} from "react-router-dom"
 // import Camera from './Camera';
+import { AmplifyTheme } from 'aws-amplify-react-native';
+
+const MySectionHeader = Object.assign({}, AmplifyTheme.sectionHeader, { background: 'green' });
+const MyTheme = Object.assign({}, AmplifyTheme, { sectionHeader: MySectionHeader });
+
+<Authenticator theme={MyTheme} />
 
 
 Amplify.configure(awsconfig);

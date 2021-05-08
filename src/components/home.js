@@ -7,15 +7,20 @@ import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 import ProgressBar from "../components/progressBar";
 // import { BrowserRouter as Router } from "react-router-dom";
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
 // import Camera from './Camera';
+import logo from './logo.png'
+
 
 
 Amplify.configure(awsconfig);
 
 function Home() {
 
+
     const [truck, setTrucks] = useState([]);
+
+
 
     useEffect(()=> {
       fetchTrucks()
@@ -31,6 +36,10 @@ function Home() {
             console.log('error on fetching trucks', error);
         }
     };
+    const styleLogo = {
+        height: "30%",
+        width: "30%"
+    }
 
   return (
     
@@ -38,8 +47,10 @@ function Home() {
       <MDBContainer>
         <MDBRow>
         <MDBCol className="col-md-8">
-        <h2>TrackYourTruck</h2>
-        <MDBBtn style={{ backgroundColor: '#808080'}}><AmplifySignOut /></MDBBtn>
+            <div id='logo'>
+                <img src={logo} style={styleLogo}/>
+            </div>    
+        {/* <MDBBtn style={{ backgroundColor: '#808080'}}><AmplifySignOut /></MDBBtn> */}
         </MDBCol>
         <MDBCol className="col-md-4 my-2">
         { truck.map((truck, idx) => {
@@ -66,7 +77,7 @@ function Home() {
         <MDBRow>
           <MDBCol className="col-md-4 my-2">
            <Link to="/map">
-            <MDBBtn style={{ backgroundColor: '#808080'}}>
+            <MDBBtn style={{ backgroundColor: '#808080', padding: '30px'}}>
               Navigation
             </MDBBtn>
             </Link>
@@ -75,7 +86,7 @@ function Home() {
         <MDBCol className="col-md-4 my-2">
             
         <Link to="/Camera">
-            <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
+            <MDBBtn style={{ backgroundColor: '#808080', padding: '30px'}} href="#">
               Maitenenace log
             </MDBBtn>
         </Link>
@@ -83,9 +94,11 @@ function Home() {
           </MDBCol>
     
           <MDBCol className="col-md-4 my-2">
-            <MDBBtn style={{ backgroundColor: '#808080'}} href="#">
-              menu item
+          <Link to="/SmartRecs">
+            <MDBBtn style={{ backgroundColor: '#808080', padding: '30px'}} href="#">
+              Smart Recommendations
             </MDBBtn>
+            </Link>
           </MDBCol>
           </MDBRow>
     </MDBContainer>
@@ -93,4 +106,4 @@ function Home() {
   );
 }
 
-export default withAuthenticator(Home);
+export default Home;

@@ -66,7 +66,7 @@ const AddTruck = ({onUpload}) => {
   )
 }
 
-function Camera() {
+function SmartRecs() {
   const [truck, setTrucks] = useState([]);
   const [truckOn, setTruckOn] = useState('');
   const [truckURL, setTruckURL] = useState('');
@@ -125,7 +125,7 @@ function Camera() {
 
     return(
       
-      <div className='truckList'>
+      <div className='recList'>
         <div id='logo'>
           <img src={logo} style={styleLogo}/>
         </div> 
@@ -208,4 +208,4 @@ function Camera() {
 
 
 
-export default Camera;
+export default SmartRecs;
