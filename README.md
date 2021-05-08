@@ -3,7 +3,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Toll_information_medium_truck_icon.svg">
 We keep you moving.
 
-[demo](href=https://www.youtube.com/watch?v=pwK_Xk2ACaU")
+[demo]("https://www.youtube.com/watch?v=C_1VTypYK5U")
 
 # Project Name - Track My Truck 
 ## Elevator Pitch
@@ -48,6 +48,8 @@ Our revenue streams include:
 3. Monthly Recurring Ad Revenue to Partners Such as Gas Stations, Restaurants, and Hotels
 ## Our Team
 ![our team memoji's](https://i.imgur.com/BZFzgOL.jpg)
+
+
 Our team is passionate and dedicated about improving the lives of truck drivers and reducing truck breakdown and accidents on the road. We are software engineers and designers that have diverse backgrounds in technology, education, and healthcare.
 ### Megan Casebier
 Recent UXUI Graduate from General Assembly, Psychology and Human Behavior graduate from Baylor University, Visual Design enthusiast 
