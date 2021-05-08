@@ -88,12 +88,8 @@ function Home() {
             </MDBBtn>
           </MDBCol>
           </MDBRow>
-         
     </MDBContainer>
- 
     </>
-
-
   );
 }
 
