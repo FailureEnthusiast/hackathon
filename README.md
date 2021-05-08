@@ -1,7 +1,7 @@
 # TrackMyTruck
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Toll_information_medium_truck_icon.svg">
-<img scr="https://truck-storage144558-dev.s3-us-west-2.amazonaws.com/dashboard.jpg">
+<img src="https://truck-storage144558-dev.s3-us-west-2.amazonaws.com/dashboard.jpg">
 We keep you moving.
 
 [demo](https://www.youtube.com/watch?v=C_1VTypYK5U)
