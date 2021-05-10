@@ -22,5 +22,13 @@ type Truck @model {
   createdAt: String!
   updatedAt: String!
   speed: String!
+  sleepRec: String!
+  foodRec: String!
+  healthRec: String!
+  gasRec: String!
+  serviceRec: String!
+  speedRec: String!
+  routeRec: String!
 }
+
 

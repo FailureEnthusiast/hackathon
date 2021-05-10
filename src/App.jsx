@@ -11,6 +11,7 @@ import { listTrucks } from './graphql/queries';
 //import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 import ProgressBar from "./components/progressBar";
 import Camera from "./components/Camera";
+import SmartRecs from "./components/SmartRecs";
 import Home from "./components/home";
 import Map from "./components/map";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Camera" component={Camera}/>
         <Route path="/progressBar" component={ProgressBar}/>
         <Route path="/map" component={Map}/>
+        <Route path="/SmartRecs" component={SmartRecs}/>
       </Switch>
     </div>
     </Router>

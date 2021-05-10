@@ -125,7 +125,7 @@ function SmartRecs() {
 
     return(
       
-      <div className='recList'>
+      <div className='truckList'>
         <div id='logo'>
           <img src={logo} style={styleLogo}/>
         </div> 
@@ -135,64 +135,26 @@ function SmartRecs() {
         return(
             
           <div className='truckCard'>
-            <div id='lasttDashboard'>
-                <img src={truck.filePath} style={styleDashboard}/>
-            </div>  
+                <h2>We care about your health and wellbeing</h2>
                   <table>
                     <thead>
                       <tr>
-                        <th>Indicator</th>
-                        <th>Value</th>
+                        <th>Item</th>
+                        <th>Recommendation</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Fuel Level</td>
-                        <td>{truck.lowFuel}</td>
+                        <td>Sleep</td>
+                        <td>{truck.sleepRec}</td>
                       </tr>
                       <tr>
-                        <td>Speed</td>
-                        <td>{truck.speed}</td>
+                        <td>Health</td>
+                        <td>{truck.healthRec}</td>
                       </tr>
                       <tr>
-                        <td>Lamp Out</td>
-                        <td>{truck.lampOut}</td>
-                      </tr>
-                      <tr>
-                        <td>Fog Lamp On</td>
-                        <td>{truck.fogLamp}</td>
-                      </tr>
-                      <tr>
-                        <td>Oil</td>
-                        <td>{truck.oil}</td>
-                      </tr>
-                      <tr>
-                        <td>Tire Pressure</td>
-                        <td>{truck.tire}</td>
-                      </tr>
-                      <tr>
-                        <td>Engine Temperature</td>
-                        <td>{truck.engTemp}</td>
-                      </tr>
-                      <tr>
-                        <td>Antilock Break On</td>
-                        <td>{truck.antilockBreak}</td>
-                      </tr>
-                      <tr>
-                        <td>Traction Control Malfunction</td>
-                        <td>{truck.tractionControlMalfunction}</td>
-                      </tr>
-                      <tr>
-                        <td>Engine Warning</td>
-                        <td>{truck.engineWarning}</td>
-                      </tr>
-                      <tr>
-                        <td>Battery</td>
-                        <td>{truck.battery}</td>
-                      </tr>
-                      <tr>
-                        <td>Washer Fluid Low</td>
-                        <td>{truck.washerFluid}</td>
+                        <td>Food</td>
+                        <td>{truck.foodRec}</td>
                       </tr>
                     </tbody>
                   </table>

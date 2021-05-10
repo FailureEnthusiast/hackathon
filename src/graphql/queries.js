@@ -27,6 +27,13 @@ export const getTruck = /* GraphQL */ `
       createdAt
       updatedAt
       speed
+      sleepRec
+      foodRec
+      healthRec
+      gasRec
+      serviceRec
+      speedRec
+      routeRec
     }
   }
 `;
@@ -61,6 +68,13 @@ export const listTrucks = /* GraphQL */ `
         createdAt
         updatedAt
         speed
+        sleepRec
+        foodRec
+        healthRec
+        gasRec
+        serviceRec
+        speedRec
+        routeRec
       }
       nextToken
     }

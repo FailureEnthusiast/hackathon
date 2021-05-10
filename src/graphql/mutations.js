@@ -30,6 +30,13 @@ export const createTruck = /* GraphQL */ `
       createdAt
       updatedAt
       speed
+      sleepRec
+      foodRec
+      healthRec
+      gasRec
+      serviceRec
+      speedRec
+      routeRec
     }
   }
 `;
@@ -62,6 +69,13 @@ export const updateTruck = /* GraphQL */ `
       createdAt
       updatedAt
       speed
+      sleepRec
+      foodRec
+      healthRec
+      gasRec
+      serviceRec
+      speedRec
+      routeRec
     }
   }
 `;
@@ -94,6 +108,13 @@ export const deleteTruck = /* GraphQL */ `
       createdAt
       updatedAt
       speed
+      sleepRec
+      foodRec
+      healthRec
+      gasRec
+      serviceRec
+      speedRec
+      routeRec
     }
   }
 `;
