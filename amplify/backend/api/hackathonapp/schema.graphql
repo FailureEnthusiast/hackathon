@@ -25,10 +25,6 @@ type Truck @model {
   sleepRec: String!
   foodRec: String!
   healthRec: String!
-  gasRec: String!
-  serviceRec: String!
-  speedRec: String!
-  routeRec: String!
 }
 
 

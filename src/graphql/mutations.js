@@ -33,10 +33,6 @@ export const createTruck = /* GraphQL */ `
       sleepRec
       foodRec
       healthRec
-      gasRec
-      serviceRec
-      speedRec
-      routeRec
     }
   }
 `;
@@ -72,10 +68,6 @@ export const updateTruck = /* GraphQL */ `
       sleepRec
       foodRec
       healthRec
-      gasRec
-      serviceRec
-      speedRec
-      routeRec
     }
   }
 `;
@@ -111,10 +103,6 @@ export const deleteTruck = /* GraphQL */ `
       sleepRec
       foodRec
       healthRec
-      gasRec
-      serviceRec
-      speedRec
-      routeRec
     }
   }
 `;

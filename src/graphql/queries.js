@@ -30,10 +30,6 @@ export const getTruck = /* GraphQL */ `
       sleepRec
       foodRec
       healthRec
-      gasRec
-      serviceRec
-      speedRec
-      routeRec
     }
   }
 `;
@@ -71,10 +67,6 @@ export const listTrucks = /* GraphQL */ `
         sleepRec
         foodRec
         healthRec
-        gasRec
-        serviceRec
-        speedRec
-        routeRec
       }
       nextToken
     }
